@@ -8,12 +8,12 @@ export const BackNavigation = () => {
     <button type="button" className={styles.back} onClick={() => navigate(-1)}>
       <div className={styles.back__images}>
         <img
-          src="/img/icons/ArrowLeft.svg"
+          src={`${import.meta.env.BASE_URL}/img/icons/ArrowLeft.svg`}
           alt="arrow left"
           className={styles.back__img}
         />
         <img
-          src="/img/icons-dark/Arrow–left.svg"
+          src={`${import.meta.env.BASE_URL}/img/icons-dark/Arrow–left.svg`}
           alt="arrow left"
           className={styles.back__imgDark}
         />

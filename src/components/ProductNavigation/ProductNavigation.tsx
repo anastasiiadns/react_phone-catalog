@@ -15,23 +15,23 @@ export const ProductNavigation = () => {
       <Link to="/" className={styles.navigation__icon}>
         <img
           className={styles.navigation__img}
-          src="/img/icons/Home.svg"
+          src={`${import.meta.env.BASE_URL}/img/icons/Home.svg`}
           alt="icon home"
         />
         <img
           className={styles.navigation__imgDark}
-          src="/img/icons-dark/Home.svg"
+          src={`${import.meta.env.BASE_URL}/img/icons-dark/Home.svg`}
           alt="icon home"
         />
       </Link>
       <img
         className={styles.navigation__img}
-        src="/img/icons/disabled-arrow-right.svg"
+        src={`${import.meta.env.BASE_URL}/img/icons/disabled-arrow-right.svg`}
         alt="arrow rigth"
       />
       <img
         className={styles.navigation__imgDark}
-        src="/img/icons-dark/Disabled-arrow-right.svg"
+        src={`${import.meta.env.BASE_URL}/img/icons-dark/Disabled-arrow-right.svg`}
         alt="arrow rigth"
       />
       <NavLink
@@ -48,12 +48,12 @@ export const ProductNavigation = () => {
         <>
           <img
             className={styles.navigation__img}
-            src="/img/icons/disabled-arrow-right.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons/disabled-arrow-right.svg`}
             alt="arrow rigth"
           />
           <img
             className={styles.navigation__imgDark}
-            src="/img/icons-dark/Disabled-arrow-right.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons-dark/Disabled-arrow-right.svg`}
             alt="arrow rigth"
           />
           <p className={styles.navigation__product}>{product?.name}</p>

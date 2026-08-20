@@ -20,7 +20,7 @@ export const Categories = () => {
             <Link to="/phones" className={styles.card__phones}>
               <img
                 className={styles.card__phones__img}
-                src="/img/category-phones.png"
+                src={`${import.meta.env.BASE_URL}/img/category-phones.png`}
                 alt="image phones"
               />
             </Link>
@@ -35,7 +35,7 @@ export const Categories = () => {
             <Link to="/tablets" className={styles.card__tablets}>
               <img
                 className={styles.card__tablets__img}
-                src="/img/category-tablets.png"
+                src={`${import.meta.env.BASE_URL}/img/category-tablets.png`}
                 alt="image tablets"
               />
             </Link>
@@ -50,7 +50,7 @@ export const Categories = () => {
             <Link to="/accessories" className={styles.card__accessories}>
               <img
                 className={styles.card__accessories__img}
-                src="/img/category-accessories.png"
+                src={`${import.meta.env.BASE_URL}/img/category-accessories.png`}
                 alt="image accessories"
               />
             </Link>

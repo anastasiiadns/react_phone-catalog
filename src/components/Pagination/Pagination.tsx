@@ -37,8 +37,8 @@ export const Pagination = ({ currentPage, totalPages, goToPage }: Props) => {
           className={styles.pagination__arrow}
           src={
             isFirstPage
-              ? '/img/icons/disabled-arrow-left.svg'
-              : '/img/icons/ArrowLeft.svg'
+              ? `${import.meta.env.BASE_URL}/img/icons/disabled-arrow-left.svg`
+              : `${import.meta.env.BASE_URL}/img/icons/ArrowLeft.svg`
           }
           alt="previous page"
         />
@@ -46,8 +46,8 @@ export const Pagination = ({ currentPage, totalPages, goToPage }: Props) => {
           className={styles.pagination__arrowDark}
           src={
             isFirstPage
-              ? '/img/icons-dark/Disabled-arrow-left.svg'
-              : '/img/icons-dark/Arrow–left.svg'
+              ? `${import.meta.env.BASE_URL}/img/icons-dark/Disabled-arrow-left.svg`
+              : `${import.meta.env.BASE_URL}/img/icons-dark/Arrow–left.svg`
           }
           alt="previous page"
         />
@@ -80,8 +80,8 @@ export const Pagination = ({ currentPage, totalPages, goToPage }: Props) => {
           className={styles.pagination__arrow}
           src={
             isLastPage
-              ? '/img/icons/disabled-arrow-right.svg'
-              : '/img/icons/ArrowRight.svg'
+              ? `${import.meta.env.BASE_URL}/img/icons/disabled-arrow-right.svg`
+              : `${import.meta.env.BASE_URL}/img/icons/ArrowRight.svg`
           }
           alt="next page"
         />
@@ -89,8 +89,8 @@ export const Pagination = ({ currentPage, totalPages, goToPage }: Props) => {
           className={styles.pagination__arrowDark}
           src={
             isLastPage
-              ? '/img/icons-dark/Disabled-arrow-right.svg'
-              : '/img/icons-dark/Arrow-right.svg'
+              ? `${import.meta.env.BASE_URL}/img/icons-dark/Disabled-arrow-right.svg`
+              : `${import.meta.env.BASE_URL}/img/icons-dark/Arrow-right.svg`
           }
           alt="next page"
         />

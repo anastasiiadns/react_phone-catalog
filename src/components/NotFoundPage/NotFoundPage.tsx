@@ -12,7 +12,7 @@ export const NotFoundPage = () => {
 
       <img
         className={styles.error__image}
-        src="/img/error-not-page.png"
+        src={`${import.meta.env.BASE_URL}/img/error-not-page.png`}
         alt="image product not found"
       />
     </div>

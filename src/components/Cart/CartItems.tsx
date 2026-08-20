@@ -78,8 +78,8 @@ export const CartItems = () => {
                               className={styles.icons__close}
                               src={
                                 isHovered === item.itemId
-                                  ? '/img/icons/Close.svg'
-                                  : '/img/icons/disabled-close.svg'
+                                  ? `${import.meta.env.BASE_URL}/img/icons/Close.svg`
+                                  : `${import.meta.env.BASE_URL}/img/icons/disabled-close.svg`
                               }
                               alt="disabled close"
                             />
@@ -87,8 +87,8 @@ export const CartItems = () => {
                               className={styles.icons__closeDark}
                               src={
                                 isHovered === item.itemId
-                                  ? '/img/icons-dark/Close.svg'
-                                  : '/img/icons-dark/Disabled-close.svg'
+                                  ? `${import.meta.env.BASE_URL}/img/icons-dark/Close.svg`
+                                  : `${import.meta.env.BASE_URL}/img/icons-dark/Disabled-close.svg`
                               }
                               alt="disabled close"
                             />
@@ -121,8 +121,8 @@ export const CartItems = () => {
                               className={styles.quantity__icon}
                               src={
                                 quantity === 1
-                                  ? '/img/icons/disabled-minus.svg'
-                                  : '/img/icons/minus.svg'
+                                  ? `${import.meta.env.BASE_URL}/img/icons/disabled-minus.svg`
+                                  : `${import.meta.env.BASE_URL}/img/icons/minus.svg`
                               }
                               alt="minus button"
                             />
@@ -130,8 +130,8 @@ export const CartItems = () => {
                               className={styles.quantity__iconDark}
                               src={
                                 quantity === 1
-                                  ? '/img/icons-dark/Disabled-minus.svg'
-                                  : '/img/icons-dark/Minus.svg'
+                                  ? `${import.meta.env.BASE_URL}/img/icons-dark/Disabled-minus.svg`
+                                  : `${import.meta.env.BASE_URL}/img/icons-dark/Minus.svg`
                               }
                               alt="minus button"
                             />
@@ -143,12 +143,12 @@ export const CartItems = () => {
                           >
                             <img
                               className={styles.quantity__icon}
-                              src="/img/icons/Plus.svg"
+                              src={`${import.meta.env.BASE_URL}/img/icons/Plus.svg`}
                               alt="button plus"
                             />
                             <img
                               className={styles.quantity__iconDark}
-                              src="/img/icons-dark/Plus.svg"
+                              src={`${import.meta.env.BASE_URL}/img/icons-dark/Plus.svg`}
                               alt="button plus"
                             />
                           </button>

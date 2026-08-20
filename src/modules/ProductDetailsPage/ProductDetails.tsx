@@ -28,7 +28,7 @@ export const ProductDetailsPage = () => {
         <p className={styles.notFound__title}>Product not found</p>
         <img
           className={styles.notFound__image}
-          src="/img/no-product-found.png"
+          src={`${import.meta.env.BASE_URL}/img/no-product-found.png`}
           alt="image product not found"
         />
       </div>
@@ -85,7 +85,7 @@ export const ProductDetailsPage = () => {
                 {product.images.map(img => (
                   <img
                     key={img}
-                    src={`/${img}`}
+                    src={`${import.meta.env.BASE_URL}/${img.replace(/^\/+/, '')}`}
                     alt={product.name}
                     className={`${styles.slider__thumbnail} ${
                       selectedImage === img ? styles.active__color : ''
@@ -97,11 +97,7 @@ export const ProductDetailsPage = () => {
 
               <div className={styles.slider__main}>
                 <img
-                  src={
-                    selectedImage.startsWith('/')
-                      ? selectedImage
-                      : `/${selectedImage}`
-                  }
+                  src={`${import.meta.env.BASE_URL}/${selectedImage.replace(/^\/+/, '')}`}
                   alt={product.name}
                   className={styles.slider__image}
                 />

@@ -9,12 +9,12 @@ export const Footer = () => {
           <Link to="/">
             <img
               className={styles.footer__logo__img}
-              src="/img/Logo.svg"
+              src={`${import.meta.env.BASE_URL}/img/Logo.svg`}
               alt="logo nice gadgets"
             />
             <img
               className={styles.footer__logo__imgDark}
-              src="/img/icons-dark/Logo.svg"
+              src={`${import.meta.env.BASE_URL}/img/icons-dark/Logo.svg`}
               alt="logo nice gadgets"
             />
           </Link>
@@ -53,12 +53,12 @@ export const Footer = () => {
           >
             <img
               className={styles.footer__arrow__img}
-              src={'/img/icons/ArrowRight.svg'}
+              src={`${import.meta.env.BASE_URL}/img/icons/ArrowRight.svg`}
               alt="icon arrow right"
             />
             <img
               className={styles.footer__arrow__imgDark}
-              src={'/img/icons-dark/Arrow-Right-Upp.svg'}
+              src={`${import.meta.env.BASE_URL}/img/icons-dark/Arrow-Right-Upp.svg`}
               alt="icon arrow right"
             />
           </button>

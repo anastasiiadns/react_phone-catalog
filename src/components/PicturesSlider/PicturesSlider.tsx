@@ -5,9 +5,13 @@ export const PicturesSlider = () => {
   const isMobile = window.innerWidth > 639;
 
   const images = [
-    isMobile ? '/img/banner1.svg' : '/img/mobileBanner.svg',
-    '/img/banner-phones.png',
-    isMobile ? '/img/banner-accessories.png' : '/img/mobileBanner3.jpg',
+    isMobile
+      ? `${import.meta.env.BASE_URL}/img/banner1.svg`
+      : `${import.meta.env.BASE_URL}/img/mobileBanner.svg`,
+    `${import.meta.env.BASE_URL}/img/banner-phones.png`,
+    isMobile
+      ? `${import.meta.env.BASE_URL}/img/banner-accessories.png`
+      : `${import.meta.env.BASE_URL}/img/mobileBanner3.jpg`,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,12 +38,12 @@ export const PicturesSlider = () => {
         <button className={styles.slider__button} onClick={prevButton}>
           <img
             className={`${styles.slider__arrow} ${styles.lightIcon}`}
-            src="/img/icons/ArrowLeft.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons/ArrowLeft.svg`}
             alt="icon arrow left"
           />
           <img
             className={`${styles.slider__arrow} ${styles.darkIcon}`}
-            src="/img/icons-dark/Arrow–left.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons-dark/Arrow–left.svg`}
             alt="icon arrow left"
           />
         </button>
@@ -63,12 +67,12 @@ export const PicturesSlider = () => {
         <button className={styles.slider__button} onClick={nextButton}>
           <img
             className={`${styles.slider__arrow} ${styles.lightIcon}`}
-            src="/img/icons/ArrowRight.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons/ArrowRight.svg`}
             alt="icon arrow right"
           />
           <img
             className={`${styles.slider__arrow} ${styles.darkIcon}`}
-            src="/img/icons-dark/Arrow-right.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons-dark/Arrow-right.svg`}
             alt="icon arrow right"
           />
         </button>

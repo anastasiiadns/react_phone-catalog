@@ -56,12 +56,12 @@ export const Menu = () => {
             <NavLink to="/favorites" className={styles.button__link}>
               <img
                 className={styles.button__link__img}
-                src="/img/icons/HeartLike.svg"
+                src={`${import.meta.env.BASE_URL}/img/icons/HeartLike.svg`}
                 alt="icon heart like"
               />
               <img
                 className={styles.button__link__imgDark}
-                src="/img/icons-dark/Favourites.svg"
+                src={`${import.meta.env.BASE_URL}/img/icons-dark/Favourites.svg`}
                 alt="icon heart like"
               />
 
@@ -78,12 +78,12 @@ export const Menu = () => {
             <NavLink to="/cart" className={styles.button__link}>
               <img
                 className={styles.button__link__img}
-                src="/img/icons/ShoppingBag.svg"
+                src={`${import.meta.env.BASE_URL}/img/icons/ShoppingBag.svg`}
                 alt="icon shopping bag"
               />
               <img
                 className={styles.button__link__imgDark}
-                src="/img/icons-dark/Shopping-bag.svg"
+                src={`${import.meta.env.BASE_URL}/img/icons-dark/Shopping-bag.svg`}
                 alt="icon heart like"
               />
 

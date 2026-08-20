@@ -28,7 +28,7 @@ export const ProductCard = ({ item }: Props) => {
       >
         <img
           className={styles.models__images}
-          src={item.image.startsWith('/') ? item.image : `/${item.image}`}
+          src={`/react_phone-catalog/${item.image}`}
           alt={item.name}
         />
       </Link>

@@ -38,12 +38,12 @@ export const Dropdowns = <T extends string>({
         <div className={styles.dropdowns__arrows}>
           <img
             className={styles.dropdowns__arrow}
-            src="/img/icons/ArrowDown.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons/ArrowDown.svg`}
             alt="arrow down"
           />
           <img
             className={styles.dropdowns__arrowDark}
-            src="/img/icons-dark/Arrow-Down.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons-dark/Arrow-Down.svg`}
             alt="arrow down"
           />
         </div>

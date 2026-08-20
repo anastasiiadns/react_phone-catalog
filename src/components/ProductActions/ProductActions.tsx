@@ -36,8 +36,8 @@ export const ProductActions = ({ id, size = 'catalog' }: Props) => {
           className={styles.lightIcon}
           src={
             isLiked
-              ? '/img/icons/FavouritesFilled.svg'
-              : '/img/icons/HeartLike.svg'
+              ? `${import.meta.env.BASE_URL}/img/icons/FavouritesFilled.svg`
+              : `${import.meta.env.BASE_URL}/img/icons/HeartLike.svg`
           }
           alt="icon heart like"
         />
@@ -46,8 +46,8 @@ export const ProductActions = ({ id, size = 'catalog' }: Props) => {
           className={styles.darkIcon}
           src={
             isLiked
-              ? '/img/icons-dark/Favourites-active.svg'
-              : '/img/icons-dark/Favourites.svg'
+              ? `${import.meta.env.BASE_URL}/img/icons-dark/Favourites-active.svg`
+              : `${import.meta.env.BASE_URL}/img/icons-dark/Favourites.svg`
           }
           alt="icon heart like"
         />

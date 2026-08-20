@@ -28,12 +28,12 @@ export const Header = () => {
             <Link to="/">
               <img
                 className={`${styles.header__logo__img} ${styles.lightIcon}`}
-                src="/img/Logo.svg"
+                src={`${import.meta.env.BASE_URL}/img/Logo.svg`}
                 alt="logo nice gadgets"
               />
               <img
                 className={`${styles.header__logo__img} ${styles.darkIcon}`}
-                src="/img/icons-dark/Logo.svg"
+                src={`${import.meta.env.BASE_URL}/img/icons-dark/Logo.svg`}
                 alt="logo nice gadgets"
               />
             </Link>
@@ -84,15 +84,19 @@ export const Header = () => {
         <button onClick={handleClick}>
           <img
             className={`${styles.header__menu__img} ${styles.lightIcon}`}
-            src={isMenuPage ? '/img/icons/Close.svg' : '/img/icons/Menu.svg'}
+            src={
+              isMenuPage
+                ? `${import.meta.env.BASE_URL}/img/icons/Close.svg`
+                : `${import.meta.env.BASE_URL}/img/icons/Menu.svg`
+            }
             alt="icon menu"
           />
           <img
             className={`${styles.header__menu__img} ${styles.darkIcon}`}
             src={
               isMenuPage
-                ? '/img/icons-dark/Close.svg'
-                : '/img/icons-dark/Menu.svg'
+                ? `${import.meta.env.BASE_URL}/img/icons-dark/Close.svg`
+                : `${import.meta.env.BASE_URL}/img/icons-dark/Menu.svg`
             }
             alt="icon menu"
           />
@@ -108,12 +112,12 @@ export const Header = () => {
         >
           <img
             className={`${styles.header__icons__img} ${styles.lightIcon}`}
-            src="/img/icons/HeartLike.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons/HeartLike.svg`}
             alt="icon heart like"
           />
           <img
             className={`${styles.header__icons__img} ${styles.darkIcon}`}
-            src="/img/icons-dark/Favourites.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons-dark/Favourites.svg`}
             alt="icon heart like"
           />
 
@@ -130,12 +134,12 @@ export const Header = () => {
         >
           <img
             className={`${styles.header__icons__img} ${styles.lightIcon}`}
-            src="/img/icons/ShoppingBag.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons/ShoppingBag.svg`}
             alt="icon shopping bag"
           />
           <img
             className={`${styles.header__icons__img} ${styles.darkIcon}`}
-            src="/img/icons-dark/Shopping-bag.svg"
+            src={`${import.meta.env.BASE_URL}/img/icons-dark/Shopping-bag.svg`}
             alt="icon shopping bag"
           />
 
