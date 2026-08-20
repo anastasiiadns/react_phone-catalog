@@ -12,7 +12,7 @@ export const Categories = () => {
 
   return (
     <div className={styles.categories}>
-      <h1 className={styles.categories__title}>Shop by category</h1>
+      <h2 className={styles.categories__title}>Shop by category</h2>
 
       <div className={styles.cards}>
         <div className={styles.card}>

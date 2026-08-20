@@ -28,7 +28,7 @@ export const ProductsSlider = ({ title, products }: Props) => {
   return (
     <div className={styles.slider}>
       <div className={styles.slider__navigation}>
-        <h1 className={styles.slider__title}>{title}</h1>
+        <h2 className={styles.slider__title}>{title}</h2>
 
         <div className={styles.slider__arrows}>
           <button
