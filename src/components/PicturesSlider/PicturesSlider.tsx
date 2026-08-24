@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import styles from './picturesSlider.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 export const PicturesSlider = () => {
   const isMobile = window.innerWidth > 639;
+  const navigate = useNavigate();
 
   const images = [
     isMobile
@@ -55,12 +57,24 @@ export const PicturesSlider = () => {
             }}
           >
             {images.map((image, index) => (
-              <img
-                key={index}
-                className={styles.slider__image}
-                src={image}
-                alt={`Slide ${index + 1}`}
-              />
+              <div key={index} className={styles.slider__slide}>
+                <img
+                  className={styles.slider__image}
+                  src={image}
+                  alt={`Slide ${index + 1}`}
+                />
+
+                {index === 0 && (
+                  <button
+                    type="button"
+                    className={styles.slider__bannerButton}
+                    onClick={() =>
+                      navigate('/phones/apple-iphone-14-pro-128gb-spaceblack')
+                    }
+                    aria-label="Order now"
+                  />
+                )}
+              </div>
             ))}
           </div>
         </div>

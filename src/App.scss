@@ -14,11 +14,15 @@ iframe {
   }
 }
 
-.layout {
-  background-color: $hover-bg-color;
-  min-height: calc(100vh - 48px);
+.app {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.layout {
+  flex: 1;
+  background-color: $hover-bg-color;
 }
 
 main,

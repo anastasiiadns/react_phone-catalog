@@ -18,7 +18,7 @@ export const App = () => {
   const hideFooter = location.pathname === '/menu';
 
   return (
-    <>
+    <div className="app">
       <Header />
       <ScrollToTop />
 
@@ -27,11 +27,9 @@ export const App = () => {
           <Route
             path="/"
             element={
-              <>
-                <main className="App">
-                  <HomePage />
-                </main>
-              </>
+              <main className="App">
+                <HomePage />
+              </main>
             }
           />
           <Route path="/phones">
@@ -55,6 +53,6 @@ export const App = () => {
       </div>
 
       {!hideFooter && <Footer />}
-    </>
+    </div>
   );
 };
